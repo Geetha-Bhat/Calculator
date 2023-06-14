@@ -1,0 +1,12 @@
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\bin\Debug\net6.0\Calculator.Models.deps.json
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\bin\Debug\net6.0\Calculator.Models.dll
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\bin\Debug\net6.0\Calculator.Models.pdb
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\Calculator.Models.csproj.AssemblyReference.cache
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\Calculator.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\Calculator.Models.AssemblyInfoInputs.cache
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\Calculator.Models.AssemblyInfo.cs
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\Calculator.Models.csproj.CoreCompileInputs.cache
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\Calculator.Models.dll
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\refint\Calculator.Models.dll
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\Calculator.Models.pdb
+C:\Users\gbhat\source\repos\Calculator\Calculator.Models\obj\Debug\net6.0\ref\Calculator.Models.dll

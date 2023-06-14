@@ -1,0 +1,61 @@
+﻿@page
+@using Calculator.Models
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Calculator</h1>
+    
+    <form method="post">
+        <div class="row g-3 mt-5">
+            <div class="col">
+                <label for="Num1" class="form-label">First Number</label>
+                <input type="number" asp-for="Num1" step="0.01" class="form-control" placeholder="Enter number" aria-label="Enter whole number or decimal" />
+                <span asp-validation-for="Num1"></span>
+            </div>
+            
+            <div class="col">
+                <label for="Num2" class="form-label">Second Number</label>
+                <input type="number" asp-for="Num2" step="0.01" class="form-control" placeholder="Enter number" aria-label="Enter whole number or decimal" />
+                <span asp-validation-for="Num2"></span>
+            </div>
+            
+            <div class="col">
+                <label for="Operator" class="form-label">Pick operator</label>
+                <select asp-for="Operator" class="form-control">
+                    <option value="">Select a operation</option>
+                    @foreach (var c in CalculatorRequest.OperatorList)
+                    {
+                        <option value="@c">@c</option>
+                    }
+                </select>
+                <span asp-validation-for="Operator" class="alert-danger"></span>
+            </div>
+        </div>
+       
+        @if (Model.Result.HasValue)
+        {
+            <div class="row">
+                <label class="col-sm-2 form-label">Result</label>
+                <input readonly="readonly" type="number" asp-for="Result" class="form-control" />
+            </div>
+        }
+        
+        @if (Model.HasApiError)
+        {
+            <div class="row">
+                <div class="alert-danger">There was an error when calculating.  Please try again or contact support.</div>
+            </div>
+        }
+        
+        <div class="row mt-3">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-outline-dark" asp-page-handler="Calculate">Calculate</button>
+                <button type="submit" class="btn btn-outline-dark" asp-page-handler="Clear">Clear Values</button>
+            </div>
+        </div>
+        
+    </form>
+</div>
